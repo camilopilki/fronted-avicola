@@ -33,5 +33,7 @@ module.exports = {
     },
     compress: true,
     port: 9000,
+    host: '0.0.0.0', // Necesario para que escuche en todos los interfaces de red
+    allowedHosts: 'all', // Permite todos los hosts
   },
 };
