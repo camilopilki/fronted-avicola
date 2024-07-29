@@ -21,7 +21,7 @@ const RegistrarJaula = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/jaula/register', jaula);
+      await axios.post('http://avicola-staluisa-71d0d1a32774.herokuapp.com/api/jaula/register', jaula);
       navigate('/mostrar-jaulas');
     } catch (error) {
       console.error('Error al registrar jaula:', error);

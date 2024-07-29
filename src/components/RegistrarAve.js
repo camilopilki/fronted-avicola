@@ -34,7 +34,7 @@ const RegistrarAve = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/aves/register', ave);
+      await axios.post('http://avicola-staluisa-71d0d1a32774.herokuapp.com/api/aves/register', ave);
       console.log('Ave registrada:', ave);
       navigate('/mostrar-aves');
     } catch (error) {

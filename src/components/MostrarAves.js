@@ -10,7 +10,7 @@ const MostrarAves = () => {
   useEffect(() => {
     const fetchAves = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/aves');
+        const response = await axios.get('https://avicola-staluisa-71d0d1a32774.herokuapp.com/api/aves');
         const aves = response.data;
         const agrupadas = agruparAvesPorRaza(aves);
         setAvesAgrupadas(agrupadas);
