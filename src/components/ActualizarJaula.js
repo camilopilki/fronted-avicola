@@ -15,7 +15,7 @@ const ActualizarJaula = () => {
   useEffect(() => {
     const fetchJaula = async () => {
       try {
-        const response = await axios.get(`http://avicola-staluisa-71d0d1a32774.herokuapp.com/api/jaula/${id}`);
+        const response = await axios.get(`https://avicola-staluisa-71d0d1a32774.herokuapp.com/api/jaula/${id}`);
         setJaula(response.data);
       } catch (error) {
         console.error('Error al obtener la jaula:', error);
@@ -36,7 +36,7 @@ const ActualizarJaula = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://avicola-staluisa-71d0d1a32774.herokuapp.com/api/jaula/${id}`, jaula);
+      await axios.put(`https://avicola-staluisa-71d0d1a32774.herokuapp.com/api/jaula/${id}`, jaula);
       navigate('/mostrar-jaulas');
     } catch (error) {
       console.error('Error al actualizar la jaula:', error);
