@@ -10,7 +10,7 @@ const MostrarJaulas = () => {
   useEffect(() => {
     const fetchJaulas = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/jaula');
+        const response = await axios.get('http://avicola-staluisa-71d0d1a32774.herokuapp.com/api/jaula');
         setJaulas(response.data);
       } catch (error) {
         console.error('Error al obtener las jaulas:', error);
