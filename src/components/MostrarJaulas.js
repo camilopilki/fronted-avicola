@@ -19,6 +19,7 @@ const MostrarJaulas = () => {
 
     fetchJaulas();
   }, []);
+console.log("Aca esta",jaulas)
 
   return (
     <div className="table-container">
